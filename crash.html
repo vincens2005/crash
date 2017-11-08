@@ -2,11 +2,7 @@
 <html>
   
       <script>
-	     window.onbeforeunload = function(e) {
-  var dialogText = 'This page contains unsaved changes. Are you sure you want to leaave? RANDOM DFGSHD  fbhehdcbbjdb jdbjbchdbh';
-  e.returnValue = dialogText;
-  return dialogText;
-};
+	     window.onbeforeunload = alert('Nice try, but no.');
       var total = "";
       for( var i = 0; i < 100000; i++ ) {
           total = total + i.toString();
