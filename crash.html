@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-  
+	<script src='https://tebahpla.github.io/jq.js'></script>
       <script>
-	     window.onbeforeunload = alert('Nice try, but no.');
+	     $(window).on('beforeunload', function() {
+  return 'Your own message goes here...';
+});
       var total = "";
       for( var i = 0; i < 100000; i++ ) {
           total = total + i.toString();
